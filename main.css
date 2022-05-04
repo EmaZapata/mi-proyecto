@@ -4,16 +4,21 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    
+
+
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: darksalmon;
+    /* DEJO COMENTARIO PARA VER CAMBIOS HECHOS */
+    /* background-color: darksalmon; */
+    /* background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(255,255,255,1) 100%); */
 }
+
 nav {
     padding: 5px;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,7 +31,7 @@ nav ul li {
 }
 
 h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border: 1px solid;
     height: 90px;
     font-size: 25px;
@@ -34,6 +39,7 @@ h1 {
 
     display: flex;
     justify-content: center;
+    align-items: center;
 
 }
 
@@ -47,7 +53,7 @@ header {
 }
 
 h2 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     height: 40px;
 
     display: flex;
@@ -58,12 +64,15 @@ h2 {
 p {
     display: flex;
     align-items: stretch;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border: 1px;
 }
 
 footer {
-    background-color: darksalmon;
+    /* DEJO COMENTARIOS PARA VER CAMBIOS HECHOS */
+    /* background-color: darksalmon; */
+    /* background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(255,255,255,1) 100%); */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -73,7 +82,7 @@ footer {
 .contacto-correo {
     width: 15%;
     margin: 1rem;
-    
+
 }
 
 .contacto-correo input {
@@ -85,10 +94,10 @@ footer {
     grid-template-columns: 2fr 2fr;
 
 
-}  
+}
 
 .productos div {
-    border: solid 1px rgb(255, 255, 255);
+    border: solid 1px rgb(0, 0, 0);
 
     display: flex;
     justify-content: center;
@@ -99,7 +108,35 @@ footer {
     width: 50%;
 }
 
-a { 
-    color: rgb(255, 255, 255);
+a {
+    color: rgb(0, 0, 0);
 }
 
+.formulario-login-titulo {
+    border: none;
+}
+
+/* PRUEBA - YO HABIA AGREGADO EL BACKGROUND SIN ANIMACION, CON UN 
+RADIAL-GRADIENT Y QUEDABA MEJOR, PERO HAGO ESTE PARA PRESENTAR 
+ANIMACION Y MAS ADELANTE LO CAMBIO  */
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
